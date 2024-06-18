@@ -19,6 +19,13 @@ app.get("/", (request, response, next) => {
 
 
 
+const ContactRouter = require(".controllers/ContactRouter.js");
+app.use("/contacts", ContactRouter);
+
+
+
+
+
 // Return a bunch of useful details from the database connection
 // Dig into each property here:
 // https://mongoosejs.com/docs/api/connection.html
